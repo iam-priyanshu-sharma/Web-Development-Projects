@@ -1,5 +1,5 @@
 # Web-Development-Projects
-## This Repository contains all Projects of Web Development related to my BCA 5th semester and my Udemy Course taught by Course instructor *"Colt Steele"*.
+## This Repository contains all Projects of Web Development related to my BCA 5th semester and my Udemy Course taught by Course instructor *"Colt Steele" & "Jonas Schmedtmann"*.
 
 ![7-Phases-of-web-development-life-cycle](https://user-images.githubusercontent.com/77437944/236680622-dfadcf80-3eb3-4289-bce7-4973446d9c0c.jpg)
 
