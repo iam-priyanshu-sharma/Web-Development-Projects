@@ -1,0 +1,128 @@
+img {
+  width: 320px;
+  height: 240px;
+}
+
+header {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  border: 3px solid #2e2e2e;
+  padding: 5px;
+  width: 400px;
+  margin: 0px auto;
+  box-shadow: 0px 0px 15px #434f5b;
+}
+header h1 {
+  color: #212a3f;
+  font-size: 45px;
+}
+header p {
+  color: #434f5b;
+}
+#topnav {
+  font-family: "Dancing Script", cursive;
+  background-color: #434f5b;
+  font-size: 30px;
+  text-transform: lowercase;
+  width: 415px;
+  margin: 0 auto;
+}
+#topnav ul {
+  padding: 20px 15px;
+  margin: 0px;
+  text-align: center;
+}
+#topnav ul li {
+  list-style-type: none;
+  display: inline;
+}
+#topnav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin: 0px 5px;
+  padding: 5px;
+}
+#topnav ul li a:hover {
+  border-bottom: 3px solid #f2f2f2;
+  transition: 50ms linear 0s;
+  -moz-transition: 50ms linear 0s;
+  -webkit-transition: 50ms linear 0s;
+}
+body {
+  background-color: #f2f2f2;
+}
+#content {
+  font-family: "Lora", serif;
+}
+#content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212a3f;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+#content p {
+  color: #2e2e2e;
+  text-align: left;
+  width: 415px;
+  margin: 0px auto;
+}
+#content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content ul {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+#pic1 {
+  padding-bottom: 5px;
+}
+#pic2 {
+  padding-bottom: 5px;
+}
+#pic3 {
+  padding-bottom: 5px;
+}
+footer {
+  border-top: 10px solid #434f5b;
+  width: 415px;
+  margin: 0px auto;
+}
+footer p {
+  float: right;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  margin: 0px;
+  font-family: "Lora", serif;
+}
+.footernav {
+  padding-top: 5px;
+  padding-left: 0px;
+  float: left;
+}
+.footernav ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footernav ul li {
+  list-style-type: none;
+  display: inline;
+}
+.footernav ul li a:link,
+.footernav ul li a:visited {
+  color: #212a3f;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: "Dancing Script", cursive;
+}
+.footernav ul li a:hover {
+  color: #8f8f8f;
+}
