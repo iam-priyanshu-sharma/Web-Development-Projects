@@ -1,0 +1,18 @@
+.square {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+#board {
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  flex-wrap: wrap;
+}
+.square:nth-child(odd) {
+  background-color: red;
+}
+.square:nth-child(even) {
+  background-color: black;
+}
