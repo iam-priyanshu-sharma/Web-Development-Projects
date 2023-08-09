@@ -1,0 +1,16 @@
+/* YOUR CODE GOES IN HERE */
+div {
+  width: 210px;
+  border-style: solid;
+  border-radius: 5px;
+  text-align: center;
+  border-color: grey;
+  border-width: 1px;
+}
+img {
+  width: 200;
+  border: 5px;
+  border-color: rgb(236, 183, 191);
+  border-radius: 50%;
+  border-style: solid;
+}
