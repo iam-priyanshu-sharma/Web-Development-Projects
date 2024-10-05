@@ -26,8 +26,12 @@ Paragraph default: 1.6
 - Tints: 
 #fdf2e9
 #fae5d3
+#eb984e
 
-- Shades: #cf711f
+- Shades: 
+#cf711f
+#45260a
+
 - Accents:
 - Greys
 #6f6f6f (lightest grey allowed on #fdf2e9)
@@ -35,6 +39,7 @@ Paragraph default: 1.6
 #333
 
 --- 03 SHADOWS
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 04 BORDER-RADIUS
 Default: 9px
@@ -147,6 +152,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -156,6 +162,11 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /*Put transition to original "state" */
   /* transition: background-color 0.3s; */
@@ -186,6 +197,19 @@ body {
   /* border: 3px solid #fff; */
   box-shadow: inset 0 0 0 3px #fff;
 }
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .link:link,
 .link:visited {
   display: inline-block;
@@ -220,6 +244,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /*HELPER/SETTING CLASSES*/
