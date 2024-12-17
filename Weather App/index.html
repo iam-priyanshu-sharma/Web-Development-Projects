@@ -3,9 +3,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Weather App in JavaScript</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Interactive Weather Forecast Application With API Integration"
+    />
+    <title>Weather Forecast Web Application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icons/favicon-icon.png" />
+    <link rel="stylesheet" href="style.css" />
     <!-- Linking BoxIcon for Icon -->
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
@@ -14,7 +20,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
+      <header><i class="bx bx-left-arrow-alt"></i>Weather Forecast</header>
       <section class="input-part">
         <p class="info-txt"></p>
         <div class="content">
@@ -55,6 +61,13 @@
             <div class="details">
               <span>_</span>
               <p>Humidity</p>
+            </div>
+          </div>
+          <div class="column aqi">
+            <i class="bx bxs-mask"></i>
+            <div class="details">
+              <span id="aqi-level">_</span>
+              <p>AQI Level</p>
             </div>
           </div>
         </div>

@@ -5,7 +5,8 @@ const wrapper = document.querySelector(".wrapper"),
   locationBtn = inputPart.querySelector("button"),
   weatherPart = wrapper.querySelector(".weather-part"),
   wIcon = weatherPart.querySelector("img"),
-  arrowBack = wrapper.querySelector("header i");
+  arrowBack = wrapper.querySelector("header i"),
+  aqiLevelSpan = document.getElementById("aqi-level");
 
 let api;
 
@@ -24,13 +25,13 @@ locationBtn.addEventListener("click", () => {
 });
 
 function requestApi(city) {
-  api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=your_api_key`;
+  api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=91e8e84a8f911a67bc130992bd8d83fb`;
   fetchData();
 }
 
 function onSuccess(position) {
   const { latitude, longitude } = position.coords;
-  api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=your_api_key`;
+  api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=91e8e84a8f911a67bc130992bd8d83fb`;
   fetchData();
 }
 
@@ -44,7 +45,10 @@ function fetchData() {
   infoTxt.classList.add("pending");
   fetch(api)
     .then((res) => res.json())
-    .then((result) => weatherDetails(result))
+    .then((result) => {
+      weatherDetails(result);
+      getAQIData(result.coord.lat, result.coord.lon); // Get AQI data
+    })
     .catch(() => {
       infoTxt.innerText = "Something went wrong";
       infoTxt.classList.replace("pending", "error");
@@ -88,6 +92,27 @@ function weatherDetails(info) {
     inputField.value = "";
     wrapper.classList.add("active");
   }
+}
+
+function getAQIData(lat, lon) {
+  const aqiApi = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=91e8e84a8f911a67bc130992bd8d83fb`;
+  fetch(aqiApi)
+    .then((res) => res.json())
+    .then((result) => {
+      const aqi = result.list[0].main.aqi;
+      const aqiDescription = getAQIDescription(aqi);
+      aqiLevelSpan.innerText = aqiDescription;
+    })
+    .catch((error) => console.error(" Error fetching AQI data:", error));
+}
+
+function getAQIDescription(aqi) {
+  if (aqi === 1) return "Good";
+  if (aqi === 2) return "Fair";
+  if (aqi === 3) return "Moderate";
+  if (aqi === 4) return "Poor";
+  if (aqi === 5) return "Very Poor";
+  return "Unknown";
 }
 
 arrowBack.addEventListener("click", () => {
