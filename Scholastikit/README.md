@@ -10,7 +10,7 @@ This Project is Best for the beginners who want to learn Javascript projects wit
 
 Homepage consists of all 21 Calculator Stacked in single page with links to the individual pages of the calculator. Its fully responsive and its is index.html of the main page.
 
-<img src="screeenshot/home1.png" width="350" title="hover text"><img src="screeenshot/home2.png" width="350" title="hover text">
+<img src="screeenshot/home1.png" width="350" title="hover text"> <img src="screeenshot/home2.png" width="350" title="hover text">
 
 ### demo: https://iam-priyanshu-sharma.github.io/Scholastikit/
 
