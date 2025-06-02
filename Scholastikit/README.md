@@ -146,7 +146,7 @@ Simple to use Ohm's Law Calculator. Calculate Power, Current, Voltage or Resista
 
 ### Demo: https://iam-priyanshu-sharma.github.io/Scholastikit/Ohm's%20Law%20Calculator/index.html
 
-# 15. Password Generator and Checker
+## 15. Password Generator and Checker
 
 Generate Strong password from 4 to 32 characters consisting of combination of Uppercase, lowercase, numbers, special characters. The UI is Clean and responsive.
 
@@ -158,7 +158,7 @@ You can also Check your password Strongest and how much time will it take to cra
 
 ### Demo: https://iam-priyanshu-sharma.github.io/Scholastikit/Password%20Generator%20and%20Checker/index.html
 
-# 16. Percentage Increase Calculator
+## 16. Percentage Increase Calculator
 
 A **Percentage Increase Calculator** helps you quickly find how much a value has grown over time in percentage terms. By comparing the original and new values, it shows the rate of increase, making it useful for finance, business, academics, and everyday calculations. This tool simplifies understanding growth trends and making data-driven decisions.
 
@@ -204,7 +204,7 @@ It also contain History tab which consists of calculation history and constant T
 
 ### Demo: https://iam-priyanshu-sharma.github.io/Scholastikit/Scientific%20Calculator/index.html
 
-## 21.Statistics Calculator
+## 21. Statistics Calculator
 
 Stastics Claculator consisits of operation like finding Sum, Sum of Squares, Mean, Population Variance (σ^2), Population Standard Deviation (σ), Sample Variance (s^2), Sample Standard Deviation (s), Geometric Mean, Quadratic Mean, Median, Mode, Range, First Quartile, Third Quartile, Interquartile Range, Mid-Range, Sorting in assending and decendind order, Minimum, Maximum.
 
