@@ -1,0 +1,84 @@
+:root {
+  --color: hsla(0, 0%, 0%, 0.1);
+  --width: 50%;
+  --font: verdana;
+}
+body {
+  background-color: var(--color);
+  font-family: var(--font);
+}
+#cont {
+  width: var(--width);
+
+  margin: 0 auto;
+
+  position: relative;
+}
+#cont form {
+  font-weight: bold;
+  padding: 20px;
+}
+#labelC {
+}
+#cont form #before,
+#cont form #present {
+  padding: 5px 0px;
+  width: 100%;
+}
+#labelC p {
+  padding: 5px;
+}
+#cont form input {
+}
+#div {
+}
+h2 {
+  text-align: center;
+}
+#result {
+  text-align: center;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  font-size: 18px;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="number"]:focus {
+  border: 3px solid #555;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.button {
+  position: relative;
+  background-color: #4caf50;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #4caf50;
+}
+
+.button:hover {
+  content: "";
+  background-color: rgb(235, 235, 235);
+  color: #4caf50;
+}
