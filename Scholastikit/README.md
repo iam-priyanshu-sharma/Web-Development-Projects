@@ -12,7 +12,7 @@ Homepage consists of all 21 Calculator Stacked in single page with links to the 
 
 <img src="screeenshot/home1.png" width="350" title="hover text"> <img src="screeenshot/home2.png" width="350" title="hover text">
 
-### demo: https://iam-priyanshu-sharma.github.io/Scholastikit/
+### Demo: https://iam-priyanshu-sharma.github.io/Scholastikit/
 
 ## 1. 2D Function Graph Calculator
 
